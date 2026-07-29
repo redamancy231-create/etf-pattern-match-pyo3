@@ -16,6 +16,7 @@
 | [etf-pattern-match-pybind11](https://github.com/redamancy231-create/etf-pattern-match-pybind11) | C++/pybind11 原版与 golden fixtures 来源 |
 | [ml-quant-trading](https://github.com/initial-d/ml-quant-trading) | Panel 数据格式与回测系统 |
 | [ashare-mcp](https://github.com/CharmYue/ashare-mcp) | MCP 数据源与原子工具协作参考 |
+| [个人主页](https://github.com/redamancy231-create/redamancy231-create) | 全部公开仓库索引与项目关系总览 |
 
 ## 快速开始
 

@@ -16,6 +16,7 @@ A **Rust + PyO3** compute core for ETF pattern matching, with DTW, cosine simila
 | [etf-pattern-match-pybind11](https://github.com/redamancy231-create/etf-pattern-match-pybind11) | Original C++/pybind11 implementation and source of the golden fixtures |
 | [ml-quant-trading](https://github.com/initial-d/ml-quant-trading) | Panel data format and backtesting system |
 | [ashare-mcp](https://github.com/CharmYue/ashare-mcp) | MCP data source and atomic-tool integration reference |
+| [Profile](https://github.com/redamancy231-create/redamancy231-create) | All public repositories and project relationship overview |
 
 ## Quick start
 
