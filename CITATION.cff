@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: etf-pattern-match-pyo3
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - given-names: redamancy231-create
+repository-code: "https://github.com/redamancy231-create/etf-pattern-match-pyo3"
+url: "https://github.com/redamancy231-create/etf-pattern-match-pyo3"
+abstract: "Rust/PyO3 ETF pattern matching core — DTW, cosine similarity, and 15-dim feature extraction, API-compatible with the C++/pybind11 original."
+keywords:
+  - ETF
+  - pattern-matching
+  - DTW
+  - Rust
+  - PyO3
+  - quantitative-finance
+license: MIT
+version: 0.1.0
+date-released: 2026-07-29

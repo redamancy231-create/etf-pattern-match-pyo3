@@ -1,0 +1,80 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+env:
+  PYTHONIOENCODING: utf-8
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.12"]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: stable-msvc
+          components: rustfmt, clippy
+
+      - name: Cache Rust
+        uses: Swatinem/rust-cache@v2
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install maturin numpy pytest
+
+      - name: Rust format check
+        run: cargo fmt --all -- --check
+
+      - name: Rust clippy
+        run: cargo clippy --all-targets --all-features -- -D warnings
+
+      - name: Rust tests
+        run: cargo test --release
+
+      - name: Build wheel
+        run: maturin build --release --out dist
+
+      - name: Wheel content check
+        shell: pwsh
+        run: |
+          $wheel = Get-ChildItem -Path dist -Filter *.whl | Select-Object -First 1
+          if (-not $wheel) { throw "No wheel was produced" }
+          python scripts/check_wheel.py $wheel.FullName
+
+      - name: Install wheel
+        shell: pwsh
+        run: |
+          $wheel = Get-ChildItem -Path dist -Filter *.whl | Select-Object -First 1
+          python -m pip install --force-reinstall $wheel.FullName
+
+      - name: Python tests
+        run: python -m pytest tests/ -v -k "not panel and not mcp"
+
+      - name: Verify golden fixtures and batch behavior
+        run: |
+          python verify_etf_core.py
+          python verify_batch.py
+
+      - name: Installed-package import check
+        run: python -c "from etf_pattern_match_pyo3 import FEATURE_KEYS; assert len(FEATURE_KEYS) == 15; print(f'{len(FEATURE_KEYS)} features, import OK')"

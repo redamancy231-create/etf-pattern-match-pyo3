@@ -1,0 +1,28 @@
+{
+  "_meta": {
+    "fixture": "standardize_normal",
+    "cpp_commit": "7c1269a70f3079b14e25365bd908e6f40f478fc0",
+    "generated": "2026-07-29",
+    "cpp_module": "etf_core (pybind11)",
+    "cpp_version": "ETF pattern matching core — C++ accelerated (pybind11)",
+    "python_version": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+    "numpy_version": "2.4.4"
+  },
+  "data": {
+    "input": [
+      100.0,
+      101.0,
+      102.5,
+      99.8,
+      103.2,
+      105.0
+    ],
+    "output": [
+      0.00967766782593612,
+      0.2508393244417028,
+      -1.8345306985288186,
+      1.194881538827936,
+      0.3791321674332436
+    ]
+  }
+}

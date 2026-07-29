@@ -1,0 +1,30 @@
+[build-system]
+requires = ["maturin>=1.0"]
+build-backend = "maturin"
+
+[project]
+name = "etf-pattern-match-pyo3"
+version = "0.1.0"
+description = "Rust/PyO3 ETF pattern matching — DTW, cosine similarity, 15-dim feature extraction"
+license = { text = "MIT" }
+license-files = ["LICENSE", "NOTICE"]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["numpy>=1.26"]
+
+[project.urls]
+Homepage = "https://github.com/redamancy231-create/etf-pattern-match-pyo3"
+Repository = "https://github.com/redamancy231-create/etf-pattern-match-pyo3"
+Changelog = "https://github.com/redamancy231-create/etf-pattern-match-pyo3/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+panel = ["torch"]
+mcp = ["fastmcp>=2.0"]
+gpu = ["cupy>=13"]
+dev = ["pytest>=8", "ruff"]
+bench = ["psutil>=5.9"]
+
+[tool.maturin]
+module-name = "etf_pattern_match_pyo3._core"
+python-source = "python"
+features = ["pyo3/extension-module"]

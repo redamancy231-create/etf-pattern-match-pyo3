@@ -1,0 +1,28 @@
+etf-pattern-match-pyo3 — Third-Party Notices
+============================================
+
+This project is licensed under the MIT License. See LICENSE.
+
+Original implementation attribution
+-----------------------------------
+Parts of the API contract, algorithm behavior, validation fixtures, and demo
+structure are derived from or adapted from etf-pattern-match-pybind11:
+https://github.com/redamancy231-create/etf-pattern-match-pybind11
+
+Copyright (c) 2026 Acerolaorion
+Licensed under the MIT License.
+
+Key runtime and build dependencies
+----------------------------------
+- PyO3: MIT OR Apache-2.0
+- ndarray: MIT OR Apache-2.0
+- rayon: MIT OR Apache-2.0
+- NumPy: BSD-3-Clause (the distributed NumPy package may include separately
+  licensed bundled components; consult its distribution notices)
+- FastMCP (optional `mcp` extra): Apache-2.0
+- PyTorch (optional `panel` extra): BSD-3-Clause
+- maturin (build backend): MIT OR Apache-2.0
+
+This NOTICE is a convenience summary, not a replacement for the complete
+license texts shipped by each dependency. Downstream distributors should
+review the exact dependency versions and their accompanying notices.

@@ -1,0 +1,29 @@
+[package]
+name = "etf-pattern-match-pyo3"
+version = "0.1.0"
+edition = "2021"
+description = "Rust/PyO3 ETF pattern matching core — DTW + cosine similarity + 15-dim features"
+license = "MIT"
+repository = "https://github.com/redamancy231-create/etf-pattern-match-pyo3"
+
+[lib]
+name = "_core"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+pyo3 = "0.23"
+numpy = "0.23"
+ndarray = "0.16"
+rayon = "1.10"
+
+[profile.release]
+opt-level = 2
+lto = false
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+ndarray-npy = "0.9"
+
+[[bench]]
+name = "core"
+harness = false

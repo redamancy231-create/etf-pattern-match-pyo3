@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "cpp_commit": "7c1269a70f3079b14e25365bd908e6f40f478fc0",
+    "generated": "2026-07-29",
+    "total_fixtures": 31
+  },
+  "files": {
+    "constants.json": "4049dfc64e018c55",
+    "cosine_identical.json": "7a6c256de5df6509",
+    "cosine_opposite.json": "68479e321f940c48",
+    "cosine_orthogonal.json": "e5fc9c494e27469e",
+    "cosine_zero_vector.json": "a14d141166206b79",
+    "dtw_identical.json": "6f45fdb9b8403bf8",
+    "dtw_narrow_window.json": "e350ec35711406db",
+    "dtw_random_0.json": "080b77b96b2a9194",
+    "dtw_random_1.json": "43d790289b5179cb",
+    "dtw_random_2.json": "96e75533cf587c7c",
+    "dtw_random_3.json": "187f0893a15938b5",
+    "dtw_random_4.json": "8fd4250ed1f8a936",
+    "dtw_random_5.json": "27e212f0d44ae957",
+    "dtw_random_6.json": "be15d77350563ee3",
+    "dtw_random_7.json": "6a2329a636e5f27d",
+    "dtw_random_8.json": "cc6f2185beb2851f",
+    "dtw_random_9.json": "2af7250eaddaadb9",
+    "dtw_unequal_len.json": "913768e1b3a3a2ea",
+    "pattern_match_short.json": "ef02dcef86bff81d",
+    "pattern_match_t500.json": "4ffafd6f948e824d",
+    "pattern_match_t600.json": "61f69979d618ac87",
+    "pattern_match_t700.json": "ec13f9ad230c1b4e",
+    "standardize_constant.json": "205159dc4daa2614",
+    "standardize_normal.json": "5712da9f18e739f0",
+    "standardize_random_0.json": "9dc7dcb6913eceab",
+    "standardize_random_1.json": "bbe23ddf0000607f",
+    "standardize_random_2.json": "94f3502fada908f2",
+    "standardize_random_3.json": "b7358bd85a88b301",
+    "standardize_random_4.json": "859dd1e2189b51c2",
+    "standardize_single.json": "18cd6bb8d23cb0a1",
+    "standardize_zero_start.json": "755d55f6ab9f731c"
+  }
+}

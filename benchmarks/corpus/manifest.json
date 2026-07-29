@@ -1,0 +1,251 @@
+{
+  "seed": 42,
+  "generator": "np.random.seed + np.random.randn + np.cumprod",
+  "standard": [
+    {
+      "file": "corpus_00.npz",
+      "kind": "standard",
+      "L_query": 19,
+      "sigma": 0.01,
+      "len": 500,
+      "desc": "短×短×低波动",
+      "group": 0,
+      "seed": 42
+    },
+    {
+      "file": "corpus_01.npz",
+      "kind": "standard",
+      "L_query": 19,
+      "sigma": 0.01,
+      "len": 500,
+      "desc": "短×短×低波动",
+      "group": 1,
+      "seed": 42
+    },
+    {
+      "file": "corpus_02.npz",
+      "kind": "standard",
+      "L_query": 19,
+      "sigma": 0.01,
+      "len": 500,
+      "desc": "短×短×低波动",
+      "group": 2,
+      "seed": 42
+    },
+    {
+      "file": "corpus_03.npz",
+      "kind": "standard",
+      "L_query": 19,
+      "sigma": 0.01,
+      "len": 500,
+      "desc": "短×短×低波动",
+      "group": 3,
+      "seed": 42
+    },
+    {
+      "file": "corpus_04.npz",
+      "kind": "standard",
+      "L_query": 19,
+      "sigma": 0.01,
+      "len": 500,
+      "desc": "短×短×低波动",
+      "group": 4,
+      "seed": 42
+    },
+    {
+      "file": "corpus_05.npz",
+      "kind": "standard",
+      "L_query": 19,
+      "sigma": 0.03,
+      "len": 1000,
+      "desc": "中×短×高波动",
+      "group": 0,
+      "seed": 42
+    },
+    {
+      "file": "corpus_06.npz",
+      "kind": "standard",
+      "L_query": 19,
+      "sigma": 0.03,
+      "len": 1000,
+      "desc": "中×短×高波动",
+      "group": 1,
+      "seed": 42
+    },
+    {
+      "file": "corpus_07.npz",
+      "kind": "standard",
+      "L_query": 19,
+      "sigma": 0.03,
+      "len": 1000,
+      "desc": "中×短×高波动",
+      "group": 2,
+      "seed": 42
+    },
+    {
+      "file": "corpus_08.npz",
+      "kind": "standard",
+      "L_query": 19,
+      "sigma": 0.03,
+      "len": 1000,
+      "desc": "中×短×高波动",
+      "group": 3,
+      "seed": 42
+    },
+    {
+      "file": "corpus_09.npz",
+      "kind": "standard",
+      "L_query": 19,
+      "sigma": 0.03,
+      "len": 1000,
+      "desc": "中×短×高波动",
+      "group": 4,
+      "seed": 42
+    },
+    {
+      "file": "corpus_10.npz",
+      "kind": "standard",
+      "L_query": 60,
+      "sigma": 0.01,
+      "len": 2000,
+      "desc": "长×长×低波动",
+      "group": 0,
+      "seed": 42
+    },
+    {
+      "file": "corpus_11.npz",
+      "kind": "standard",
+      "L_query": 60,
+      "sigma": 0.01,
+      "len": 2000,
+      "desc": "长×长×低波动",
+      "group": 1,
+      "seed": 42
+    },
+    {
+      "file": "corpus_12.npz",
+      "kind": "standard",
+      "L_query": 60,
+      "sigma": 0.01,
+      "len": 2000,
+      "desc": "长×长×低波动",
+      "group": 2,
+      "seed": 42
+    },
+    {
+      "file": "corpus_13.npz",
+      "kind": "standard",
+      "L_query": 60,
+      "sigma": 0.01,
+      "len": 2000,
+      "desc": "长×长×低波动",
+      "group": 3,
+      "seed": 42
+    },
+    {
+      "file": "corpus_14.npz",
+      "kind": "standard",
+      "L_query": 60,
+      "sigma": 0.01,
+      "len": 2000,
+      "desc": "长×长×低波动",
+      "group": 4,
+      "seed": 42
+    },
+    {
+      "file": "corpus_15.npz",
+      "kind": "standard",
+      "L_query": 60,
+      "sigma": 0.03,
+      "len": 4000,
+      "desc": "超长×长×高波动",
+      "group": 0,
+      "seed": 42
+    },
+    {
+      "file": "corpus_16.npz",
+      "kind": "standard",
+      "L_query": 60,
+      "sigma": 0.03,
+      "len": 4000,
+      "desc": "超长×长×高波动",
+      "group": 1,
+      "seed": 42
+    },
+    {
+      "file": "corpus_17.npz",
+      "kind": "standard",
+      "L_query": 60,
+      "sigma": 0.03,
+      "len": 4000,
+      "desc": "超长×长×高波动",
+      "group": 2,
+      "seed": 42
+    },
+    {
+      "file": "corpus_18.npz",
+      "kind": "standard",
+      "L_query": 60,
+      "sigma": 0.03,
+      "len": 4000,
+      "desc": "超长×长×高波动",
+      "group": 3,
+      "seed": 42
+    },
+    {
+      "file": "corpus_19.npz",
+      "kind": "standard",
+      "L_query": 60,
+      "sigma": 0.03,
+      "len": 4000,
+      "desc": "超长×长×高波动",
+      "group": 4,
+      "seed": 42
+    }
+  ],
+  "edge": [
+    {
+      "file": "corpus_20.npz",
+      "kind": "edge",
+      "L_query": 19,
+      "sigma": 0.0,
+      "len": 500,
+      "desc": "常数序列"
+    },
+    {
+      "file": "corpus_21.npz",
+      "kind": "edge",
+      "L_query": 19,
+      "sigma": 0.0001,
+      "len": 1000,
+      "desc": "近零波动"
+    },
+    {
+      "file": "corpus_22.npz",
+      "kind": "edge",
+      "L_query": 19,
+      "sigma": 0.01,
+      "len": 1000,
+      "desc": "含 NaN 序列（每 100 点插入一个 NaN）"
+    },
+    {
+      "file": "corpus_23.npz",
+      "kind": "edge",
+      "L_query": 19,
+      "sigma": null,
+      "len": 500,
+      "desc": "510050.SH 真实 ETF 切片（离线时确定性替代）",
+      "source": "deterministic_fallback; akshare 不可用: ModuleNotFoundError: No module named 'akshare'"
+    },
+    {
+      "file": "corpus_24.npz",
+      "kind": "edge",
+      "L_query": 19,
+      "sigma": 0.001,
+      "drift": 0.001,
+      "len": 1000,
+      "desc": "上升趋势（drift=+0.001，叠加低噪声）"
+    }
+  ],
+  "file_count": 25
+}

@@ -1,0 +1,39 @@
+# Rust
+/target/
+# Cargo.lock 提交到仓库（可复现构建，见 CLAUDE.md 架构约束 #6）
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+_review/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.pyd
+*.pdb
+*.so
+
+# Benchmark artifacts (rebuildable)
+benchmarks/clean_build/
+benchmarks/cpp_internal/
+benchmarks/__pycache__/
+benchmarks/.worker_results/
+
+# Benchmark scripts with local paths (NRR report is sufficient evidence)
+benchmarks/build_cpp_benchmark.py
+benchmarks/run_benchmark.py
+benchmarks/results/
+
+# Session handoff (local paths)
+docs/NEXT_STEPS.md
+.claude/
