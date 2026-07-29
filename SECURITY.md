@@ -10,7 +10,7 @@
 
 If you discover a security vulnerability, please **do not** open a public issue.
 
-Instead, report it via [GitHub's private vulnerability reporting](https://github.com/redamancy231-create/etf-pattern-match-pyo3/security/advisories/new) or email the maintainer.
+Instead, report it via [GitHub's private vulnerability reporting](https://github.com/redamancy231-create/etf-pattern-match-pyo3/security/advisories/new).
 
 Please include:
 - A description of the vulnerability
