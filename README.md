@@ -93,7 +93,7 @@ $wheel = Get-ChildItem dist/*.whl | Select-Object -First 1
 python scripts/check_wheel.py $wheel.FullName
 ```
 
-交互演示见 [notebooks/etf_pattern_matching_demo.ipynb](notebooks/etf_pattern_matching_demo.ipynb)。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)，版本记录见 [CHANGELOG.md](CHANGELOG.md)。
+交互演示见 [notebooks/etf_pattern_matching_demo.ipynb](notebooks/etf_pattern_matching_demo.ipynb)。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)，版本记录见 [CHANGELOG.md](CHANGELOG.md)，fork 修改方向见 [FORK_DIRECTIONS.md](FORK_DIRECTIONS.md)。
 
 ## 许可证
 
